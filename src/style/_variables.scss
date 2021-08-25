@@ -1,0 +1,14 @@
+/**
+ * 公用的sass变量和function等
+ */
+$default-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; // 默认字体
+$default-color: #42cc83; // 默认主颜色
+$default-color-light: #f0f9eb; // 默认次颜色
+
+// 居中
+@mixin center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

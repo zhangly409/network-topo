@@ -1,0 +1,20 @@
+/**
+ * 全局css入口,引入各组件的全局css
+ */
+
+@import './table.scss';
+@import './variables.scss';
+
+body {
+  font-family: $default-font-family;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+  line-height: 1.375;
+  text-align: center;
+}
+#app {
+  height: 100vh
+}
