@@ -1,2 +1,2 @@
 # 效果图
-![demo](src/assets/topo.png)
+![demo](src/assets/demo.gif)

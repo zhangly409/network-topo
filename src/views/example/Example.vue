@@ -52,6 +52,7 @@ export default {
       }
       this.getChildren(data)
       this.appTopoData = this._.cloneDeep(this.topoData)
+      console.log(this.appTopoData)
     },
     getChildren(data, parentId = 0, comboId = 0, comboName = '', parentStatus = '', parentClusterId = '') {
       let clusterId = parentClusterId

@@ -19,13 +19,23 @@ export default {
     return {}
   },
   computed: {},
-  mounted() {
-    this.initGraph()
+  watch: {
+    data: {
+      handler(newValue) {
+        if (newValue && newValue.nodes) {
+          this.initGraph()
+        }
+      },
+      deep: true,
+      immediate: true,
+    },
   },
+  mounted() {},
   methods: {
     initGraph() {
+      console.log(this.data)
       const graph = new GTopo('#topoContainer', {})
-      graph.renderData(this.data)
+      graph.renderData(this._.cloneDeep(this.data))
       /* 画布缩放时 tooltip 和 floatDOM 随之缩放 */
       let cb = e => {
         e.stopPropagation()
