@@ -14,7 +14,7 @@ import { baseModes } from './base/baseModes'
  */
 const grid = new G6.Grid()
 
-class GTopo {
+class NTopo {
   constructor(dom, config = {}) {
     this.container = document.querySelector(dom)
     this.width = Number.parseFloat(getComputedStyle(this.container)['width'])
@@ -149,4 +149,4 @@ class GTopo {
   }
 }
 
-export default GTopo
+export default NTopo
