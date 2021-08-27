@@ -39,4 +39,4 @@
     const network = new NTopo('#mountNode', config)
 ```
 
-`config`是一个对象，和`G6`的`graph`配置项`api`保持一致,额外自定义了默认配置，允许不传时直接采用默认配置项。类`NTopo`的方法也和`G6`的方法保持一致。
+`config`是一个对象，和`G6`的`graph`配置项`api`保持一致,额外自定义了默认配置，允许不传时直接采用默认配置项。类`NTopo`的方法也和`G6`的`graph`的方法保持一致。
